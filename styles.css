@@ -1,0 +1,504 @@
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  * {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.navbar {
+  background-color: #0c0c0c; /* Ensure this is here */
+  width: 100%;
+  padding: 0;
+  z-index: 999;
+  position: fixed;
+}
+
+.container-fluid {
+  background-color: #0c0c0c; /* Ensure this is here */
+  padding: 0; /* Remove padding to avoid any white space */
+}
+
+p {
+  color: white;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #b3c8cf !important;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.logo span {
+  color: #f2613f;
+}
+
+.nav-item a {
+  color: #f2613f;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.navbar .logo {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-item a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #f2613f;
+}
+
+/* PROFILE */
+#profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 100px;
+}
+
+.profile-container {
+  padding: 4vw 8vw;
+  text-align: center;
+}
+.profile-container h1 {
+  color: #f2613f;
+}
+
+.profile-container h1:hover {
+  color: white;
+  font-size: 2.8rem;
+  transition: 0.5s ease;
+}
+
+.profile-container span {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.profile-container span:hover {
+  color: #f2613f;
+  font-size: 2.8rem;
+  transition: 0.5s ease;
+}
+
+.profile-container p {
+  color: white;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.profile-container a {
+  padding: 10px 30px;
+  background-color: #f2613f;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-container a:hover {
+  background-color: white;
+  color: #f2613f;
+  scale: 1.1;
+}
+
+#about-me h1 {
+  color: #f2613f;
+  margin-left: 4vw;
+}
+#about-me h1 span {
+  color: white;
+}
+
+.about-me-container {
+  padding: 4vw 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-container img {
+  border-radius: 10px;
+  border: 1px solid #f2613f;
+}
+
+.about-me-container img:hover {
+  scale: 1.05;
+  transition: 0.5s ease;
+}
+
+.about-me-details {
+  padding: 2vw;
+}
+
+.about-me-details p {
+  text-align: justify;
+}
+.about-me-details p span {
+  color: #f2613f;
+  font-size: 1.2rem;
+}
+
+#my-work h1 {
+  color: #f2613f;
+  margin-left: 4vw;
+}
+#my-work h1 span {
+  color: white;
+}
+
+.my-work-items-container {
+  padding: 4vw 12vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-work-items-container li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.my-work-items-container li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.work {
+  padding: 4vw 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.work-img {
+  width: 500px;
+  height: 350px;
+  margin-bottom: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.work-title {
+  color: #f2613f;
+  margin-bottom: 10px;
+}
+.work-description {
+  text-align: justify;
+}
+.active {
+  border: 2px solid #f2613f;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #f2613f;
+  border-radius: 10px;
+}
+
+#my-skills h1 {
+  color: #f2613f;
+  margin-left: 4vw;
+}
+#my-skills h1 span {
+  color: white;
+}
+
+.skills-container {
+  padding: 4vw 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-con {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.bar-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  background-color: #ddd;
+}
+
+.bar-bg {
+  height: 100%;
+  background-color: #f2613f;
+  border-radius: 5px;
+}
+
+#contact-me {
+  padding: 4vw;
+}
+
+#contact-me h1 {
+  color: #f2613f;
+}
+#contact-me h1 span {
+  color: white;
+}
+
+.contact-main-heading {
+  width: 40%;
+  font-size: 60px;
+  cursor: pointer;
+  color: white !important;
+  transition: color 0.3s ease;
+  padding: 4vw;
+}
+.contact-main-heading:hover {
+  color: #f2613f !important;
+  transition: color 0.5s ease;
+}
+.contact-con {
+  padding-top: 4vw 12vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.name-label {
+  color: #f2613f;
+  font-size: 20px;
+}
+.inputs {
+  width: 500px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.submit-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2613f;
+  padding: 10px 20px;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #f2613f;
+  transition: 0.5s ease;
+}
+
+footer {
+  background-color: #f2613f;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  color: white;
+  padding-top: 50px;
+  font-size: 1.3rem;
+}
+.social-links {
+  margin-bottom: 50px;
+}
+.social-links i {
+  color: white;
+  padding: 10px;
+  background-color: black;
+}
+
+@media (max-width: 769px) {
+  #about-me h1 {
+    margin-left: 6vw;
+  }
+  .about-me-details p {
+    padding: 50px;
+  }
+  #my-work h1 {
+    margin-left: 6vw;
+  }
+  #my-skills h1 {
+    margin-left: 6vw;
+  }
+  #contact-me h1 {
+    margin-left: 6vw;
+  }
+  .contact-con {
+    flex-direction: column;
+  }
+  .contact-main-heading {
+    width: 70%;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 475px) {
+  #profile {
+    margin-top: 50px;
+    height: 70vh;
+  }
+  .profile-container {
+    padding: 0vw;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .profile-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-container span {
+    font-size: 1.5rem;
+  }
+  .profile-container h1:hover {
+    font-size: 1.7rem;
+  }
+  .profile-container span:hover {
+    font-size: 1.7rem;
+  }
+  .profile-container p {
+    padding: 30px;
+    text-align: justify;
+  }
+  #about-me h1 {
+    font-size: 1.2rem;
+  }
+  .about-me-container img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me-details p {
+    text-align: justify;
+    padding: 0;
+  }
+  #my-work {
+    margin-top: 40px;
+  }
+  #my-work h1 {
+    font-size: 1.2rem;
+  }
+  .my-work-items-container li a {
+    font-size: 12px;
+  }
+  .active {
+    padding: 1px;
+  }
+  .my-work-items-container {
+    gap: 2.5rem;
+  }
+  .work-img {
+    width: 250px;
+    height: 200px;
+  }
+  #my-skills {
+    margin-top: 40px;
+  }
+  #my-skills h1 {
+    font-size: 1.2rem;
+  }
+  .bar-con {
+    width: 300px;
+  }
+  #contact-me {
+    /* padding: 4vw; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+  .contact-con {
+    /* padding: 4vw 12vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
+  }
+  #contact-me h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-main-heading {
+    font-size: 40px !important;
+    text-align: center;
+    width: 80%;
+    padding: 20px 0;
+  }
+  #contactForm {
+    padding: 4vw;
+  }
+  .inputs {
+    width: 300px;
+    height: 30px;
+  }
+  .name-label {
+    color: #f2613f;
+    font-size: 14px;
+  }
+  .submit-btn {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+    color: white;
+  }
+  footer {
+    margin-top: 40px;
+  }
+  .footer-container {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contact-con {
+    flex-direction: column;
+  }
+  .contact-main-heading {
+    width: 70%;
+  }
+}

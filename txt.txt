@@ -1,0 +1,72 @@
+// let skillSection = document.querySelector("#skills");
+
+// //Skills Section
+// const skills = [
+//   {
+//     image: "skill-card-removebg-preview (1).png",
+//     skillname: "HTML",
+//   },
+//   {
+//     image: "skill-card-2-removebg-preview (1).png",
+//     skillname: "CSS",
+//   },
+//   {
+//     image: "skill-card-3-removebg-preview (1).png",
+//     skillname: "JavaScript",
+//   },
+//   {
+//     image: "skill-card-9-removebg-preview (1).png",
+//     skillname: "Bootstrap",
+//   },
+//   {
+//     image: "skill-card-4-removebg-preview (1).png",
+//     skillname: "Node.js",
+//   },
+//   {
+//     image: "skills-card-5-removebg-preview (1).png",
+//     skillname: "Express",
+//   },
+//   {
+//     image: "skill-card-6-removebg-preview (1) (1).png",
+//     skillname: "Mongo DB",
+//   },
+//   {
+//     image: "skill-card-8-removebg-preview (1).png",
+//     skillname: "React JS",
+//   },
+//   {
+//     image: "skill-card-7-removebg-preview (1).png",
+//     skillname: "SQL",
+//   },
+//   {
+//     image: "skill-card-10-removebg-preview (1).png",
+//     skillname: "Figma",
+//   },
+// ];
+
+// let skillSectionHeading = document.createElement("h1");
+// skillSectionHeading.innerText = "Skills";
+// skillSectionHeading.classList.add("skills-heading");
+// skillSection.appendChild(skillSectionHeading);
+
+// let skillsContainer = document.createElement("div");
+// skillsContainer.classList.add("skills-container");
+// skillSection.appendChild(skillsContainer);
+
+// skills.forEach((skill) => {
+//   let skillCard = document.createElement("div");
+//   skillCard.classList.add("skill-card");
+//   skillsContainer.appendChild(skillCard);
+//   let skillCardImg = document.createElement("img");
+//   skillCardImg.classList.add("skill-card-img");
+//   skillCardImg.src = skill.image;
+//   skillCard.appendChild(skillCardImg);
+
+//   let skillCardNameContainer = document.createElement("div");
+//   skillCardNameContainer.classList.add("skill-card-name");
+//   skillCard.appendChild(skillCardNameContainer);
+//   let skillCardName = document.createElement("p");
+//   skillCardName.classList.add("skill-card-p");
+//   skillCardName.innerText = skill.skillname;
+//   skillCardNameContainer.appendChild(skillCardName);
+// });
